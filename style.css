@@ -1,0 +1,108 @@
+:root {
+    --warm-cream: #fff9f2;
+    --deep-espresso: #3e2723;
+    --soft-gold: #c6a664;
+    --crust-brown: #8d6e63;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--warm-cream);
+    color: var(--deep-espresso);
+    scroll-behavior: smooth;
+}
+
+/* Hero Video Styling */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+}
+
+#hero-video {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.hero-content {
+    text-align: center; color: white;
+}
+
+.hero-content h1 {
+    font-size: 4rem; font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: var(--soft-gold); color: white;
+    padding: 12px 30px; text-decoration: none; border-radius: 50px;
+    font-weight: bold; transition: 0.3s;
+}
+
+/* About Section */
+.about { padding: 80px 20px; text-align: center; }
+.about-card {
+    max-width: 800px; margin: 0 auto;
+    background: white; padding: 40px; border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.magic-ending {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem; color: var(--soft-gold);
+    margin-top: 30px;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; margin-top: 40px;
+}
+
+.menu-item {
+    background: white; padding: 20px; border-radius: 15px; text-align: center;
+}
+
+.menu-img {
+    height: 200px; border-radius: 10px; background-size: cover; margin-bottom: 15px;
+}
+
+.vibe { font-style: italic; color: var(--crust-brown); }
+
+/* Team Section */
+.team { background: #fdf3e7; padding: 80px 20px; }
+.team-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member { text-align: center; padding: 20px; }
+.member-photo {
+    width: 120px; height: 120px; background: #ccc; border-radius: 50%;
+    margin: 0 auto 15px; border: 4px solid var(--soft-gold);
+}
+
+.member-vibe {
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-size: 0.95rem; color: var(--crust-brown);
+}
+
+footer {
+    background: var(--deep-espresso); color: white;
+    text-align: center; padding: 40px;
+  }
